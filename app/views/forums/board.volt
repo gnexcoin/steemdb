@@ -32,9 +32,9 @@
         </div>
         {% else %}
         <div class="ui large header">
-          Steem Forums Prototype
+          Gnexcoin Forums Prototype
           <div class="sub header">
-            An experimental view of the STEEM blockchain, organized in a traditional forum layout.
+            An experimental view of the Gnexcoin blockchain, organized in a traditional forum layout.
           </div>
         </div>
         {% endif %}
