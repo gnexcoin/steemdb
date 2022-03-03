@@ -81,7 +81,7 @@
                 <div class="ui header">
                   {{ totals['steem'] }}
                   <div class="sub header">
-                    STEEM
+                    GNEX
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@
                 <div class="ui header">
                   {{ totals['sbd'] }}
                   <div class="sub header">
-                    SBD
+                    GBD
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@
                 <div class="ui header">
                   {{ totals['sp'] }}
                   <div class="sub header">
-                    Steem Power
+                    Gnex Power
                   </div>
                 </div>
               </div>
@@ -138,16 +138,16 @@
                 <th class="collapsing">#</th>
                 <th>Account</th>
                 <th class="collapsing center aligned">VESTS/SP</th>
-                <th class="collapsing center aligned">STEEM</th>
-                <th class="collapsing center aligned">SBD</th>
+                <th class="collapsing center aligned">GNEX</th>
+                <th class="collapsing center aligned">GBD</th>
                 <th class="collapsing center aligned">Posts<br/>/Replies</th>
-                <th class="collapsing center aligned">SP/Post</th>
-                <th class="collapsing center aligned">VESTS/SP</th>
-                <th class="collapsing center aligned">STEEM</th>
-                <th class="collapsing center aligned">SBD</th>
-                <th class="collapsing center aligned">VESTS/SP</th>
-                <th class="collapsing center aligned">STEEM</th>
-                <th class="collapsing center aligned">SBD</th>
+                <th class="collapsing center aligned">GP/Post</th>
+                <th class="collapsing center aligned">VESTS/GP</th>
+                <th class="collapsing center aligned">GNEX</th>
+                <th class="collapsing center aligned">GBD</th>
+                <th class="collapsing center aligned">VESTS/GP</th>
+                <th class="collapsing center aligned">GNEX</th>
+                <th class="collapsing center aligned">GBD</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -168,7 +168,7 @@
                 </div>
                 <br>
                 <small>
-                  ~<?php echo $this->convert::vest2sp($account->vest, ""); ?> SP*
+                  ~<?php echo $this->convert::vest2sp($account->vest, ""); ?> GP*
                 </small>
               </td>
               <td>
@@ -189,7 +189,7 @@
                 </div>
                 <br>
                 <small>
-                  ~<?php echo $this->convert::vest2sp($account->postVest, ""); ?> SP*
+                  ~<?php echo $this->convert::vest2sp($account->postVest, ""); ?> GP*
                 </small>
               </td>
               <td>
@@ -204,7 +204,7 @@
                 </div>
                 <br>
                 <small>
-                  ~<?php echo $this->convert::vest2sp($account->replyVest, ""); ?> SP*
+                  ~<?php echo $this->convert::vest2sp($account->replyVest, ""); ?> GP*
                 </small>
               </td>
               <td>
