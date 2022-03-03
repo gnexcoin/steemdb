@@ -49,7 +49,7 @@
     <div class="row">
       <div class="column">
         <div class="ui large header">
-          Steem Forums Prototype
+          Gnexcoin Forums Prototype
           <div class="sub header">
             An experimental view of the STEEM blockchain, organized in a traditional forum layout. It's not very optimized which may cause some page to load slowly.
           </div>
