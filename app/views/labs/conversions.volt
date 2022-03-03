@@ -10,7 +10,7 @@
     <div class="row">
       <div class="column">
         <div class="ui large header">
-          Recent SBD -> STEEM Conversions
+          Recent GBD -> GNEX Conversions
           <div class="sub header">
             Ordered chronologically, limited to 1000 conversions.
           </div>
