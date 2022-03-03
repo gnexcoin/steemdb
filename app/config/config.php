@@ -18,7 +18,7 @@ return new Config([
         'pluginsDir'     => APP_PATH . '/plugins/',
         'cacheDir'       => BASE_PATH . '/cache/',
         'baseUri'        => '/',
-        'publicUrl'      => 'steemdb.io',
+        'publicUrl'      => 'explorer.gnexcoin.com',
         'cryptSalt'      => 'eEAfR|_&G&f,+vU]:jFr!!A&+71w1Ms9~8_4L!<@[N@DyaIP_2My|:+.u>/6m,$D'
     ],
     'logger' => [
@@ -29,6 +29,6 @@ return new Config([
         'filename' => 'application.log',
     ],
     'steemd' => [
-        'url'       => getenv('STEEMD_URL') ? getenv('STEEMD_URL') : 'https://api.steemit.com',
+        'url'       => getenv('STEEMD_URL') ? getenv('STEEMD_URL') : 'http://gnexportal.com:9000',
     ],
 ]);
