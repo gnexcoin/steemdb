@@ -21,13 +21,13 @@
             <i class="dropdown icon"></i>
             <div class="menu">
               <a class="{{ filter == 'vest' ? 'active' : '' }} item" href="/accounts/vest">
-                Vests/SP
+                Vests/GP
               </a>
               <a class="{{ filter == 'sbd' ? 'active' : '' }} item" href="/accounts/sbd">
-                SBD
+                GBD
               </a>
               <a class="{{ filter == 'steem' ? 'active' : '' }} item" href="/accounts/steem">
-                STEEM
+                GNEX
               </a>
               <a class="{{ filter == 'powerdown' ? 'active' : '' }} item" href="/accounts/powerdown">
                 Power Down
@@ -104,9 +104,9 @@
               </td>
               <td class="collapsing right aligned">
                 <div class="ui small header">
-                  <?php echo number_format($account->total_sbd_balance, 3, ".", ",") ?> SBD
+                  <?php echo number_format($account->total_sbd_balance, 3, ".", ",") ?> GBD
                   <div class="sub header">
-                    <?php echo number_format($account->total_balance, 3, ".", ",") ?> STEEM
+                    <?php echo number_format($account->total_balance, 3, ".", ",") ?> GNEX
                   </div>
                 </div>
               </td>
