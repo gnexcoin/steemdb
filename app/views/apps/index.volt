@@ -12,7 +12,7 @@
         <div class="ui huge header">
           Steem Apps
           <div class="sub header">
-            Applications and Platforms powered by the Steem blockchain.
+            Applications and Platforms powered by the Gnex blockchain.
           </div>
         </div>
         <div class="ui secondary inverted menu">
@@ -44,7 +44,7 @@
             <div class="ui huge header">
               Platforms
               <div class="sub header">
-                User interfaces for interacting with the Steem blockchain
+                User interfaces for interacting with the Gnexcoin blockchain
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@
             <div class="ui header">
               Platform Details
               <div class="sub header">
-                The most prominent platforms have their own profile pages, click the link below to view them. To get added to this list, contact <a href="/@ray.wu">ray.wu</a> on steemit.
+                The most prominent platforms have their own profile pages, click the link below to view them. To get added to this list, contact <a href="/@starfall">ray.wu</a> on gnexcoin.
               </div>
             </div>
             <table class="ui stripped compact table">
