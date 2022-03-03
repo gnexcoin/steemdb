@@ -57,7 +57,7 @@
                       </span>
                       payout in <?php echo $this->timeAgo::mongo($comment->cashout_time); ?>
                       &mdash;
-                      <a target="_blank" href="https://steemit.com{{ comment.url }}">steemit.com</a>
+                      <a target="_blank" href="http://gnexcoin.com{{ comment.url }}">gnexcoin.com</a>
                       &mdash;
                       <a target="_blank" href="https://beta.chainbb.com{{ comment.url }}">chainbb.com</a>
                     </div>
