@@ -12,7 +12,7 @@
         <div class="ui large header">
           Steem Clients
           <div class="sub header">
-            Usage of the various Steem clients
+            Usage of the various Gnex clients
           </div>
         </div>
         <div class="ui grid">
