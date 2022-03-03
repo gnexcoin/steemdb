@@ -94,7 +94,7 @@ a.anchor {
             </div>
           </div>
         <div class='steemconnect reply'>
-          <form class='ui reply form' action='http://steemjs.com/sign/comment' method='get' target='iframe'>
+          <form class='ui reply form' action='http://gnexpotal.com/sign/comment' method='get' target='iframe'>
             <input type='hidden' name='parent_permlink' value='{{ posts[0].permlink}}'>
             <input type='hidden' name='parent_author' value='{{ posts[0].author}}'>
             <input type="hidden" name='json_metadata' value='{"app": "steemdb/0.1", "format": "markdown"}'>
@@ -139,7 +139,7 @@ $( document ).ready(function() {
           var form = $(this),
               data = form.serialize()
               embed = $(".ui.modal.steemconnect .ui.embed")
-                .attr("data-url", "https://steemjs.com/sign/comment?" + data);
+                .attr("data-url", "http://gnexportal.com/sign/comment?" + data);
           $(".ui.modal.steemconnect")
             .modal({
               onShow: function() {
@@ -160,7 +160,7 @@ $( document ).ready(function() {
         json_metadata = $("<input type='hidden' name='json_metadata' value='{\"app\": \"steemdb/0.1\", \"format\": \"markdown\"}'>"),
         body = $("<div class='field'><textarea name='body'></textarea></div>"),
         button = $("<div class='ui primary submit labeled icon button'><i class='icon edit'></i> Add Reply</div>"),
-        form = $("<form class='ui reply form' action='http://steemjs.com/sign/comment' method='get' target='iframe'>").append(parent_author, parent_permlink, json_metadata, body, button),
+        form = $("<form class='ui reply form' action='http://gnexportal.com/sign/comment' method='get' target='iframe'>").append(parent_author, parent_permlink, json_metadata, body, button),
         container = $("<div class='steemconnect reply' data-author='"+author+"' data-permlink='"+permlink+"'>").append(form),
         display = $(this).data("display");
     $("div.steemconnect[data-author="+author+"][data-permlink="+permlink+"]").remove();
