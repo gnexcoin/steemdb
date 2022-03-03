@@ -63,9 +63,9 @@
           </div>
           <div class="ui list">
             <div class="item">
-              <a href="https://steemit.com/@{{ account.name }}" class="ui fluid primary icon small basic button" target="_blank">
+              <a href="http://gnexcoin.com/@{{ account.name }}" class="ui fluid primary icon small basic button" target="_blank">
                 <i class="external icon"></i>
-                View Account on steemit.com
+                View Account on gnexcoin.com
               </a>
             </div>
           </div>
@@ -77,7 +77,7 @@
                   {{ partial("_elements/vesting_shares", ['current': account]) }}
                 </td>
               </tr>
-              <tr {% if account.vesting_withdraw_rate and account.vesting_withdraw_rate > 1 %}data-popup data-html="<table class='ui small definition table'><tr><td>Power Down - Rate</td><td>-<?php echo $this->convert::vest2sp($current->vesting_withdraw_rate, " SP"); ?></td></tr><tr><td>Power Down - Datetime</td><td><?php echo gmdate("Y-m-d H:i:s e", (string) $account->next_vesting_withdrawal / 1000) ?></td></tr></table>" data-position="left center" data-variation="very wide"{% endif %}>
+              <tr {% if account.vesting_withdraw_rate and account.vesting_withdraw_rate > 1 %}data-popup data-html="<table class='ui small definition table'><tr><td>Power Down - Rate</td><td>-<?php echo $this->convert::vest2sp($current->vesting_withdraw_rate, " GP"); ?></td></tr><tr><td>Power Down - Datetime</td><td><?php echo gmdate("Y-m-d H:i:s e", (string) $account->next_vesting_withdrawal / 1000) ?></td></tr></table>" data-position="left center" data-variation="very wide"{% endif %}>
                 <td>SP</td>
                 <td>
                   <div class="ui tiny header">
@@ -85,7 +85,7 @@
                   </div>
                 </td>
               </tr>
-              <tr data-popup data-html="<table class='ui small definition table'><tr><td>Balance</td><td><?php echo number_format($account->balance, 3, '.', ','); ?></td></tr><tr><td>Savings Balance</td><td><?php echo number_format($account->savings_balance, 3, '.', ','); ?></td></tr>{% if account.vesting_withdraw_rate and account.vesting_withdraw_rate > 1 and not account.withdraw_routes %}<tr><td>Power Down - Rate</td><td>+<?php echo $this->convert::vest2sp($current->vesting_withdraw_rate, " STEEM"); ?></td></tr><tr><td>Power Down - Datetime</td><td><?php echo gmdate("Y-m-d H:i:s e", (string) $account->next_vesting_withdrawal / 1000) ?></td></tr>{% endif %}</table>" data-position="left center" data-variation="very wide">
+              <tr data-popup data-html="<table class='ui small definition table'><tr><td>Balance</td><td><?php echo number_format($account->balance, 3, '.', ','); ?></td></tr><tr><td>Savings Balance</td><td><?php echo number_format($account->savings_balance, 3, '.', ','); ?></td></tr>{% if account.vesting_withdraw_rate and account.vesting_withdraw_rate > 1 and not account.withdraw_routes %}<tr><td>Power Down - Rate</td><td>+<?php echo $this->convert::vest2sp($current->vesting_withdraw_rate, " GNEX"); ?></td></tr><tr><td>Power Down - Datetime</td><td><?php echo gmdate("Y-m-d H:i:s e", (string) $account->next_vesting_withdrawal / 1000) ?></td></tr>{% endif %}</table>" data-position="left center" data-variation="very wide">
                 <td>STEEM</td>
                 <td>
                   <div class="ui tiny header">
