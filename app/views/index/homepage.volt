@@ -19,9 +19,9 @@
 
 <div class="ui body container">
   <h1 class="ui header">
-    SteemDB
+    Gnexcoin Explorer
     <div class="sub header">
-      Block explorer and database for the STEEM blockchain.
+      Block explorer and database for the GNEX blockchain.
     </div>
   </h1>
   <div class="ui stackable grid">
@@ -32,7 +32,7 @@
         <script type="text/javascript">
         new TradingView.widget({
           "autosize": true,
-          "symbol": "POLONIEX:STEEMBTC",
+          "symbol": "POLONIEX:GNEXBTC",
           "interval": "120",
           "timezone": "Etc/UTC",
           "theme": "White",
@@ -178,7 +178,7 @@
                 {{ props['steem_per_mvests'] }}
               </div>
               <div class="label">
-                STEEM per MVest
+                GNEX per MVest
               </div>
             </div>
           </div>
@@ -248,7 +248,7 @@
         <table class="ui small definition table" id="state">
           <tbody>
             <tr>
-              <td class="eight wide">Steem Inflation Rate</td>
+              <td class="eight wide">Gnexcoin Inflation Rate</td>
               <td>
                 {{ inflation }}
               </td>
@@ -270,7 +270,7 @@
               </td>
             </tr>
             <tr>
-              <td>SBD Interest Rate</td>
+              <td>GBD Interest Rate</td>
               <td>
                 <span data-state-witness-median="sbd_interest_rate">
                   <i class="notched circle loading icon"></i>
@@ -330,7 +330,7 @@
       ellog = document.getElementById('log');
 
       if (window.location.hostname === "localhost") {
-         wsuri = "wss://localhost:8888";
+         wsuri = "wss://gnexportal.com:9000";
       } else {
          wsuri = "wss://" + window.location.hostname + ":8888";
       }
