@@ -126,10 +126,10 @@
                 <i class="list icon"></i>
                 <div class="content">
                   <a href="/labs/conversions">
-                    SBD Conversion History
+                    GBD Conversion History
                   </a>
                   <div class="sub header">
-                    Most recent SBD -> STEEM Conversions
+                    Most recent GBD -> GNEX Conversions
                   </div>
                 </div>
               </div>
@@ -139,10 +139,10 @@
                 <i class="list icon"></i>
                 <div class="content">
                   <a href="/labs/clients">
-                    Steem Client Usage
+                    Gnex Client Usage
                   </a>
                   <div class="sub header">
-                    Which steem clients are being used
+                    Which gnex clients are being used
                   </div>
                 </div>
               </div>
@@ -184,7 +184,7 @@
                   percentage vesting
                 </a>
                 <div class="sub header">
-                  the percentage of steem as vests
+                  the percentage of gnex as vests
                 </div>
               </div>
             </div>
@@ -242,10 +242,10 @@
             <div class="item">
               <div class="ui header">
                 <a href="/api/topwitnesses">
-                  STEEM -> VESTS per Day
+                  GNEX -> VESTS per Day
                 </a>
                 <div class="sub header">
-                  Total amount of STEEM powered up per day over the last 30 days
+                  Total amount of GNEX powered up per day over the last 30 days
                 </div>
               </div>
             </div>
