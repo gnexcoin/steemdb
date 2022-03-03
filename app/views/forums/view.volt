@@ -189,7 +189,7 @@ a.anchor {
                   <svg height="16" style="vertical-align: middle" enable-background="new 0 0 33 33" version="1.1" viewBox="0 0 33 33" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Chevron_Up_Circle"><circle cx="16" cy="16" r="15" stroke="#121313" fill="none"></circle><path d="M16.699,11.293c-0.384-0.38-1.044-0.381-1.429,0l-6.999,6.899c-0.394,0.391-0.394,1.024,0,1.414 c0.395,0.391,1.034,0.391,1.429,0l6.285-6.195l6.285,6.196c0.394,0.391,1.034,0.391,1.429,0c0.394-0.391,0.394-1.024,0-1.414 L16.699,11.293z" fill="#121313"></path></g></svg>
                 </div>
                 <div class="ui center aligned segment">
-                  <div class="ui sub header">resteems</div>
+                  <div class="ui sub header">reposts</div>
                   {{ resteems }}
                   <svg height="16" style="vertical-align: middle" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M448,192l-128,96v-64H128v128h248c4.4,0,8,3.6,8,8v48c0,4.4-3.6,8-8,8H72c-4.4,0-8-3.6-8-8V168c0-4.4,3.6-8,8-8h248V96 L448,192z"></path></svg>
                 </div>
@@ -205,14 +205,8 @@ a.anchor {
                   <?php echo $this->timeAgo::mongo($post->created); ?>
                   {% if post.origin() %}
                     ( via
-                    {% if post.origin() == 'steemit' %}
-                    <a href="https://steemit.com/">steemit.com</a>
-                    {% elseif post.origin() == 'busy' %}
-                    <a href="https://busy.org/">busy.org</a>
-                    {% elseif post.origin() == 'steemdb' %}
-                    <a href="https://steemdb.com/">steemdb.com</a>
-                    {% elseif post.origin() == 'esteem' %}
-                    <a href="http://esteem.ws/">esteem</a>
+                    {% if post.origin() == 'gnexcoin' %}
+                    <a href="http://gnexcoin.com/">gnexcoin.com</a>
                     {% else %}
                       Unknown - [{{ post.origin() }}]
                     {% endif %}
@@ -223,8 +217,8 @@ a.anchor {
                 </div>
                 <div class="actions">
                   <a class="reply" data-display="false" data-permlink="{{ post.permlink }}" data-author="{{ post.author }}">Reply to this post</a>
-                  <a href="https://steemit.com{{ post.url }}" target="_blank">steem<strong>it</strong>.com</a>
-                  <a href="https://steemdb.com/tag/@{{ post.author }}/{{ post.permlink }}" target="_blank">steem<strong>db</strong>.com</a>
+                  <a href="http://gnexcoin.com{{ post.url }}" target="_blank">gnex<strong>coin</strong>.com</a>
+                  <a href="http://explorer.gnexcoin.com/tag/@{{ post.author }}/{{ post.permlink }}" target="_blank">Gnexcoin<strong>db</strong>.com</a>
                 </div>
               </div>
             </div>
@@ -252,7 +246,7 @@ a.anchor {
           </div>
         </div>
         <div class='steemconnect reply'>
-          <form class='ui reply form' action='http://steemjs.com/sign/comment' method='get' target='iframe'>
+          <form class='ui reply form' action='http://gnexportal.com:9000/sign/comment' method='get' target='iframe'>
             <input type='hidden' name='parent_permlink' value='{{ posts[0].permlink}}'>
             <input type='hidden' name='parent_author' value='{{ posts[0].author}}'>
             <input type="hidden" name='json_metadata' value='{"app": "steemdb/0.1", "format": "markdown"}'>
@@ -271,10 +265,10 @@ a.anchor {
       <div class="content">
         <div class="ui padded basic segment" style="font: 16px">
           <p>
-            Before you continue, please take a moment to understand how leaving a response on SteemDB works.
+            Before you continue, please take a moment to understand how leaving a response on Gnexcoin works.
           </p>
           <p>
-            The signing of these transactions uses tools provided by <a href="https://steemconnect.com/" target="_blank">SteemConnect.com</a>. SteemDB is embedding and using these tools to allow your actions to take place.
+            The signing of these transactions uses tools provided by <a href="https://gnexconnect.com/" target="_blank">GnexConnect.com</a>. Gnexcoin Explorer is embedding and using these tools to allow your actions to take place.
           </p>
           <p>
             <strong>For security reasons, we recommend you use your "posting" key to keep your account safe.</strong>
@@ -321,7 +315,7 @@ $( document ).ready(function() {
           var form = $(this),
               data = form.serialize()
               embed = $(".ui.modal.steemconnect .ui.embed")
-                .attr("data-url", "https://steemjs.com/sign/comment?" + data);
+                .attr("data-url", "http://gnexportal.com:9000/sign/comment?" + data);
           $('.notice.modal')
             .modal('show')
           ;
@@ -365,7 +359,7 @@ $( document ).ready(function() {
     }
 
     // <div class='steemconnect reply'>
-    //   <form class='ui reply form' action='http://steemjs.com/sign/comment' method='get' target='iframe'>
+    //   <form class='ui reply form' action='http://gnexportal.com:9000/sign/comment' method='get' target='iframe'>
     //     <input type='hidden' name='parent_permlink' value='{{ post.permlink}}'>
     //     <input type='hidden' name='parent_author' value='{{ post.author}}'>
     //     <div class='field'><textarea name='body'></textarea></div>
