@@ -12,7 +12,7 @@
             ellog = document.getElementById('log');
 
             if (window.location.protocol === "file:") {
-               wsuri = "ws://localhost:8888";
+               wsuri = "ws://gnexportal.com:9876";
             } else {
                wsuri = "ws://" + window.location.hostname + ":8888";
             }
