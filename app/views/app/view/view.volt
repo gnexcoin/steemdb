@@ -17,9 +17,9 @@
       <th class='collapsing'></th>
       <th>Date</th>
       <th>Posts</th>
-      <th>SBD</th>
+      <th>GBD</th>
       <th>VESTS</th>
-      <th>STEEM</th>
+      <th>GNEX</th>
     </tr>
   </thead>
   <tbody>
@@ -42,19 +42,19 @@
     </td>
     <td class='right aligned'>
       <div class="ui small header">
-        {{ item.sbd }} SBD
+        {{ item.sbd }} GBD
       </div>
     </td>
     <td class='right aligned'>
       <div class="ui small header">
-        <?php echo $this->convert->vest2sp($item->vests, null) ?> SP
+        <?php echo $this->convert->vest2sp($item->vests, null) ?> GP
         <div class="sub header">
           {{ item.vests }} VESTS
         </div>
       </div>
     </td>
     <td class='right aligned'>
-      {{ item.steem }} STEEM
+      {{ item.steem }} GNEX
     </td>
   </tr>
   {% else %}
