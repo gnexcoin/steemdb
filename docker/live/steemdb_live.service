@@ -1,8 +1,8 @@
 [Unit]
-Description=SteemDB.com Live Service
+Description=explorer.gnexcoin.com Live Service
 
 [Service]
-Environment=steemnode=node.steem.ws
+Environment=steemnode=gnexportal.com:9876
 WorkingDirectory=/var/www/com_steemdb/docker/live
 ExecStart=/usr/bin/python3 live.py
 Restart=always
