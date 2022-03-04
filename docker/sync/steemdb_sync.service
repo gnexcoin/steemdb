@@ -2,7 +2,7 @@
 Description=explorer.gnexcoin.com Sync Service
 
 [Service]
-Environment=steemnode=node.steem.ws
+Environment=steemnode=gnexportal.com:9876
 WorkingDirectory=/var/www/com_steemdb/docker/sync
 ExecStart=/usr/bin/python3 sync.py
 Restart=always
