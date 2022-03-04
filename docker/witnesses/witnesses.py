@@ -12,7 +12,7 @@ import os
 env_dist = os.environ
 steemd_url = env_dist.get('STEEMD_URL')
 if steemd_url == None or steemd_url == "":
-    steemd_url = 'https://api.steemit.com'
+    steemd_url = 'http://gnexportal.com:9000'
 mongodb_url = env_dist.get('MONGODB')
 if mongodb_url == None or mongodb_url == "":
     print('NEED MONGODB')
@@ -20,7 +20,7 @@ if mongodb_url == None or mongodb_url == "":
 
 fullnodes = [
     #'http://10.40.103.102:8090',
-    #'https://api.steemit.com',
+    'http://gnexportal.com:9876',
     #'http://10.60.103.43:8080',
     steemd_url,
 ]
@@ -60,7 +60,7 @@ def check_misses():
 
 def update_witnesses():
     now = datetime.now().date()
-    # pprint("[STEEM] - Update Miner Queue")
+    # pprint("[GNEX] - Update Miner Queue")
     # miners = rpc.get_miner_queue()
     # db.statistics.update({
     #   '_id': 'miner_queue'
@@ -72,7 +72,7 @@ def update_witnesses():
     scantime = datetime.now()
     users = rpc.get_witnesses_by_vote('', 100)
     #pprint(users)
-    pprint(log_tag + "[STEEM] - Update Witnesses (" + str(len(users)) + " accounts)")
+    pprint(log_tag + "[GNEX] - Update Witnesses (" + str(len(users)) + " accounts)")
     db.witness.remove({})
     for user in users:
         # Convert to Numbers
