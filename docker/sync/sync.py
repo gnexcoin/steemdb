@@ -13,7 +13,7 @@ log_tag = '[Sync] '
 env_dist = os.environ
 steemd_url = env_dist.get('STEEMD_URL')
 if steemd_url == None or steemd_url == "":
-    steemd_url = 'https://api.steemit.com'
+    steemd_url = 'http://gnexportal.com:9000'
 last_block_env = env_dist.get('LAST_BLOCK')
 if last_block_env == None or last_block_env == "":
     last_block_env = None
