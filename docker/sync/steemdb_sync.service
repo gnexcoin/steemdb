@@ -1,5 +1,5 @@
 [Unit]
-Description=SteemDB.com Sync Service
+Description=explorer.gnexcoin.com Sync Service
 
 [Service]
 Environment=steemnode=node.steem.ws
