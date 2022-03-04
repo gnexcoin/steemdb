@@ -1,8 +1,8 @@
 [Unit]
-Description=SteemDB.com History Service
+Description=explorer.gnexcoin.com History Service
 
 [Service]
-Environment=steemnode=node.steem.ws
+Environment=steemnode=gnexportal.com:9876
 WorkingDirectory=/var/www/com_steemdb/docker/history
 ExecStart=/usr/bin/python3 history.py
 Restart=always
