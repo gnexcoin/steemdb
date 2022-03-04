@@ -12,11 +12,11 @@ import re
 from apscheduler.schedulers.background import BackgroundScheduler
 
 fullnodes = [
-    'http://10.60.103.43:8080',
+    'http://195.181.245.47:9876',
     #'https://api.steemit.com',
 ]
 rpc = Steem(fullnodes)
-#mongo = MongoClient("mongodb://47.240.97.170")
+#mongo = MongoClient("mongodb://195.181.245.47")
 mongo = MongoClient("mongodb://10.40.103.102")
 db = mongo.steemdb
 
@@ -42,7 +42,7 @@ def update_fund_history():
     db.funds_history.insert(fund)
 
 def update_props_history():
-    pprint("[STEEM] - Update Global Properties")
+    pprint("[GNEX] - Update Global Properties")
 
     props = rpc.get_dynamic_global_properties()
 
