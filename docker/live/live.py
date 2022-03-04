@@ -18,7 +18,7 @@ log_tag = '[Live] '
 env_dist = os.environ
 steemd_url = env_dist.get('STEEMD_URL')
 if steemd_url == None or steemd_url == "":
-    steemd_url = 'https://api.steemit.com'
+    steemd_url = 'http://gnexportal.com:9000'
 
 live_port = env_dist.get('LIVE_PORT')
 if live_port == None or live_port == "":
