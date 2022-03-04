@@ -1,8 +1,8 @@
 [Unit]
-Description=SteemDB.com Witnesses Service
+Description=explorer.gnexcoin.com Witnesses Service
 
 [Service]
-Environment=steemnode=node.steem.ws
+Environment=steemnode=gnexportal.com:9876
 WorkingDirectory=/var/www/com_steemdb/docker/witnesses
 ExecStart=/usr/bin/python3 witnesses.py
 Restart=always
